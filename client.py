@@ -86,15 +86,10 @@ def create_client(project_dir: Path, model: str):
     2. Permissions - File operations restricted to project_dir only
     3. Security hooks - Bash commands validated against an allowlist
        (see security.py for ALLOWED_COMMANDS)
-    """
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    oauth_token = os.environ.get("CLAUDE_CODE_OAUTH_TOKEN")
-    if not api_key and not oauth_token:
-        raise ValueError(
-            "No Claude auth configured. Set either ANTHROPIC_API_KEY (Claude API key) "
-            "or CLAUDE_CODE_OAUTH_TOKEN (Claude Code auth token from `claude setup-token`)."
-        )
 
+    Note: Authentication is handled by start.bat/start.sh before this runs.
+    The Claude SDK auto-detects credentials from ~/.claude/.credentials.json
+    """
     # Create comprehensive security settings
     # Note: Using relative paths ("./**") restricts access to project directory
     # since cwd is set to project_dir

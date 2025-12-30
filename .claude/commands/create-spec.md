@@ -515,12 +515,7 @@ Once files are generated, tell the user what to do next:
 > - `$ARGUMENTS/prompts/app_spec.txt`
 > - `$ARGUMENTS/prompts/initializer_prompt.md`
 >
-> The autonomous coding agent will start automatically when you exit this session.
-> Or you can run it manually:
->
-> ```bash
-> python autonomous_agent_demo.py --project-dir [project_name]
-> ```
+> **Next step:** Type `/exit` to exit this Claude session. The autonomous coding agent will start automatically.
 >
 > **Important timing expectations:**
 >
@@ -530,10 +525,10 @@ Once files are generated, tell the user what to do next:
 >
 > **Controls:**
 >
-> - Press `Ctrl+C` to pause at any time
-> - Run the same command again to resume where you left off"
+> - Press `Ctrl+C` to pause the agent at any time
+> - Run `start.bat` (Windows) or `./start.sh` (Mac/Linux) to resume where you left off"
 
-Replace `[project_name]` with the actual project name they provided, and `[X]` with their feature count.
+Replace `[X]` with their feature count.
 
 ---
 
