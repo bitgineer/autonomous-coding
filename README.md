@@ -40,7 +40,7 @@ You need one of the following:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo/autonomous-coding.git
+git clone https://github.com/bitgineer/autonomous-coding.git
 cd autonomous-coding
 ```
 
